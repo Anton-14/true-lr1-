@@ -9,9 +9,9 @@ int main()
 {
 	cout << "hello man" << endl << "insert x:";
 
-	float x = 0; //задание 1
+	double x = 0; //задание 1
 	cin >> x;
-	float A = 2 * pow((x), 5) - pow((x), 2) - 8;
+	 double A = 2 * pow((x), 5) - pow((x), 2) - 8;
 
 	cout << setprecision(3) << A << endl;
 
@@ -48,7 +48,7 @@ int main()
 		cout << "luntik" << endl;
 	}
 
-	unsigned short  e = 0, d = 0, c = 0, f = 0; // задание 5
+	unsigned short int  e = 0, d = 0, c = 0, f = 0; // задание 5
 	cout << "insert e:" << endl;
 	cin >> e;
 	cout << "insert d:" << endl;
@@ -57,7 +57,7 @@ int main()
 	cin >> c;
 	cout << "insert f:" << endl;
 	cin >> f;
-	unsigned short F = e || (!d && c) xor f;
+	unsigned short int F = e | (~d & c) ^ f;
 	cout << setw(6) <<setfill('0') << internal << hex << showbase << F;
 	return 0;
 }
